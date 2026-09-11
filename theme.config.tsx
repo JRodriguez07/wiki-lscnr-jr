@@ -9,7 +9,7 @@ const config: DocsThemeConfig = {
   chat: {
     link: 'https://discord.com',
   },
-  docsRepositoryBase: 'https://github.com/Lorenc95/wiki-lscnr/blob/main'
+  docsRepositoryBase: 'https://github.com/Lorenc95/wiki-lscnr/blob/main',
   footer: {
     text: '© 2024 LSCNR - All rights reserved.',
   },
