@@ -1,807 +1,469 @@
 import { Callout } from 'nextra-theme-docs'
 
-# Rules
+# Server Rules
 
 <Callout type="info">
-By playing on LSCnR, you agree to these rules. Not knowing the rules, or being a new player, does not exempt you from them. We reserve the right to punish behavior that harms the server or its community even if it is not explicitly listed here. Rules can change, and it is your responsibility to stay up to date. The FiveM platform rules and the Cfx.re Platform Service Agreement also apply.
+By playing on LSCnR you agree to these rules. Being new or not having read them does not excuse you. Rules can change, so check back now and then. The FiveM platform rules and the Cfx.re Platform Service Agreement also apply.
 
-For appeals, reports, and general help, open a ticket on **Discord**.
+Questions, reports, or appeals: open a ticket on **Discord**.
 </Callout>
-
-## Rule index
-
-| Section | Covers |
-| --- | --- |
-| [1. RDM](#1-rdm) | Valid kill reasons, initiation, revenge, redzones, robbery scenes, police POI camping |
-| [2. Cross-Teaming](#2-cross-teaming) | What teaming means for criminals, cops, EMS, and tow drivers |
-| [3. Cheating](#3-cheating) and [4. Exploiting](#4-exploiting) | Banned tools, allowed mods, bug abuse |
-| [5. Combat Logging](#5-combat-logging) and [6. Self-Killing](#6-self-killing) | Leaving or dying to escape a situation |
-| [7. Crew Rules](#7-crew-rules) | Accountability, crew wars, crew members in police roles |
-| [8. Ban Evasion](#8-ban-evasion) to [13. Ghost Peeking](#13-ghost-peeking) | Staff-related offenses, stream sniping, emotes |
-| [14. Safe Zones](#14-safe-zones) to [20. Cop Hunting](#20-cop-hunting) | Zone protection, clothing, kill feeding, age, cop engagement |
-| [21. Code of Conduct](#21-code-of-conduct) and [22. Begging](#22-begging) | Community behavior, reports, staff interaction |
-
----
-
-## At a glance
-
-### Combat & PvP
-
-| Rule | What it means |
-| --- | --- |
-| **No RDM** | Do not attack or kill players without a valid reason: red-name (5-star wanted level), Most Wanted, initiation, redzones, airdrop zones, active robbery scenes, or the EMS engagement rules. |
-| **EMS are neutral** | Paramedics may only use force where these rules explicitly allow it. |
-| **No emoting** | Not during fights or chases. |
-| **No combat logging** | Except when an EMS player is unlawfully attempting to kill you. |
-| **Self-killing allowed** | You may deliberately kill your own character, including during an active chase or police engagement. Overdosing and other intended in-game death mechanics are permitted. |
-| **Crew rules** | Crews share initiation rights, can be held accountable for persistent member misconduct, and all crew wars require management approval. |
-| **Crews in police roles** | Police must remain completely impartial toward their crew. Red-name and other valid police rules apply regardless of crew membership. |
-| **No teaming** | Across sides. |
-| **No kill feeding** | Ever. |
-| **No police camping** | Police may respond to criminal POIs and drug locations, but may not camp or wait there longer than reasonably necessary to complete active police business. |
-
-### Fair play
-
-| Rule | What it means |
-| --- | --- |
-| **No cheating** | Mod menus, aim assistance, network manipulation, and any third-party tool that gives you an advantage. |
-| **No exploits** | Bugs, glitches, and unintended mechanics. Report them instead. |
-
-### Community conduct
-
-| Rule | What it means |
-| --- | --- |
-| **No discrimination** | No threats, hate speech, scams, or impersonation. |
-| **English only** | In text and voice chat. |
-| **18+ only** | Minimum age to play. |
-| **No report spamming** | The report system is for real rule breaks. |
-| **No begging** | Do not ask staff for items, money, VIP, unbans, or favors. |
-| **No persistent negativity** | A consistent pattern of making the server worse may result in permanent removal. |
 
 <Callout type="warning">
-Staff may make exceptions with management approval. **The summary above does not replace the full rules below.**
+**Playing as a cop?** See [Police Rules](/police). **Want to know when you can fight cops?** See [Criminal Rules](/criminals).
 </Callout>
 
----
+## The short version
 
-## Definitions
-
-| Term | Definition |
+| Rule | In short |
 | --- | --- |
-| **RDM** | Random Deathmatch. Attacking or killing a player without a valid in-game reason as defined in [Rule 1](#1-rdm). |
-| **Initiation** | A hostile act by a player that gives the targeted player the right to retaliate. See [Rule 1](#1-rdm) for what counts as initiation. |
-| **Redzone** | A marked area on the map where PvP is enabled by design. Engaging any player inside a redzone is valid. |
-| **Airdrop zone** | The marked zone around an active airdrop event. PvP is enabled inside it for the duration of the event. |
-| **Active robbery scene** | Any robbery in progress: store, bank, jewelry heist, or any other robbery job. Anyone present during an active robbery is a valid target. |
-| **Red-name / 5-star** | A player with a 5-star wanted level whose name appears red. These players are kill-on-sight for all players except EMS. |
-| **Bounty** | A scripted contract placed on a player. A player with an active bounty and a red name is KOS. |
-| **Most Wanted** | The single player currently holding the highest active bounty on the server, automatically elevated to a 6-star wanted level. Their name and blip appear **dark red**. Only one player holds this status at a time. They are KOS for all players except EMS. |
-| **Hit** | A player-placed contract targeting a specific player. Placing a hit requires a valid reason such as initiation or revenge. The hit amount is shown on the target's screen and displayed behind their name and on the scoreboard. At **450,000 and above**, the target's name and blip turn **bright blue** and they become publicly trackable on the map. At any amount, the target is KOS for all non-job players. Placing a hit without a valid reason is treated as RDM. |
-| **Bounty hunter** | A player whose job it is to track and kill players with active bounties or hits. |
-| **Wanted level / Stars** | A scripted mechanic reflecting a player's criminal activity. At 5 stars the player's name turns red and they become KOS. At 6 stars the player becomes the Most Wanted player, with a dark red name and blip. Only one player holds this at a time. |
-| **Combat logging** | Disconnecting from the server to avoid a negative in-game consequence. |
-| **Safe zone** | A marked no-combat area such as hospitals and spawns, shown as a green circle on the map. |
-| **Kill feeding** | Intentionally allowing another player to kill you to manipulate bounties, pad stats, or avoid a consequence. |
-| **Teaming** | Working with or assisting the opposing side to gain an advantage. |
-| **Exploit** | Using a bug, glitch, or unintended mechanic to gain an unfair advantage. |
-| **Meta gaming** | Using information obtained outside the game, such as Discord, streams, or calls, to gain an in-game advantage over players who do not have access to that information. |
-| **Combat / In combat** | You are considered in combat if you were involved in a fight or chase within the last 3 minutes. |
-| **Store robbery** | A robbery of a convenience store or similar small business. |
-| **Bank robbery** | A robbery of a bank. Counts as an active robbery scene. |
-| **Tow driver** | A player on the tow job. Tow drivers are neutral civilians and cannot be attacked unless they initiate or begin towing your vehicle. |
-| **Staff** | Any member of the LSCnR staff team, including moderators, developers, and admins. |
-| **EMS** | Emergency Medical Services. Paramedics are neutral emergency responders who may only use force where these rules explicitly allow it. |
-| **Alt account** | A secondary account used by a player who already has a registered account on the platform. |
+| **No RDM** | Only attack players when these rules give you a reason. See [Rule 1](#1-rdm). |
+| **No teaming** | Don't help the other side. Criminals, cops, EMS, and tow drivers are separate sides. |
+| **EMS are neutral** | You can only attack EMS in specific situations, and EMS can only use force in specific situations. |
+| **No cheating** | No mod menus, aim help, lag switching, or mods that give you an advantage. |
+| **No exploiting** | Found a bug? Report it. Don't use it and don't share it. |
+| **No emotes in fights** | Not during fights or chases. |
+| **No combat logging** | Don't leave the server to get out of a fight or chase. |
+| **Self-killing is allowed** | Killing your own character is fine, even mid-chase. Letting someone else kill you on purpose is not. |
+| **Crew wars need approval** | Every crew war must be approved by management. |
+| **Safe zones** | No fighting inside. Protection takes 10 seconds and does not cover wanted or hit players. |
+| **Be decent** | No hate speech, threats, harassment, scams, or impersonation. |
+| **English only** | In text and voice chat. |
+| **18+ only** | Minimum age to play. |
+| **Don't beg staff** | No asking for money, items, VIP, unbans, or a staff spot. |
+| **Use tickets, not public chat** | Reports, appeals, and complaints about staff go through tickets. |
+
+<Callout type="warning">
+This summary does not replace the full rules below. Staff can punish harmful behavior that isn't listed here, and can make exceptions with management approval.
+</Callout>
+
+<details>
+<summary><strong>Key terms</strong></summary>
+
+| Term | Meaning |
+| --- | --- |
+| **RDM** | Random deathmatch. Attacking or killing a player without a valid reason from [Rule 1](#1-rdm). |
+| **Initiation** | A hostile act that gives the target the right to fight back. See [Rule 1b](#1b-initiation). |
+| **Revenge** | Your right to kill a player once after they attacked, killed, arrested, or robbed you. See [Rule 1c](#1c-revenge). |
+| **Bounty** | A scripted contract on a player with 5 or more stars. |
+| **Red name** | A player with 5 stars. Kill on sight for everyone except EMS. |
+| **Most Wanted** | The one player with the highest active bounty. 6 stars, dark red name and blip. Kill on sight for everyone except EMS. |
+| **Hit** | A contract one player places on another. Needs a valid reason. The target is kill on sight for everyone not working as a cop, EMS, or tow driver. |
+| **Bounty hunter** | A player whose job is hunting players with bounties or hits. |
+| **Redzone** | A marked area where PvP is always on. |
+| **Airdrop zone** | The marked area around an active airdrop. PvP is on until the event ends. |
+| **Active robbery** | Any robbery in progress: store, bank, jewelry heist, or any other robbery job. |
+| **In combat** | You were in a fight or chase in the last 3 minutes. |
+| **Safe zone** | A no-combat area like hospitals and spawns. Shown as a green circle on the map. |
+| **Combat logging** | Disconnecting to avoid a bad outcome in game. |
+| **Kill feeding** | Letting someone kill you on purpose to manipulate bounties, pad stats, or avoid a consequence. |
+| **Teaming** | Working with or helping the other side. |
+| **Exploit** | Using a bug, glitch, or unintended mechanic for an advantage. |
+| **Meta gaming** | Using info from outside the game (Discord, streams, calls) for an in-game advantage. |
+| **EMS** | Paramedics. Neutral responders who can only use force where these rules allow it. |
+| **Tow driver** | A player on the tow job. A neutral civilian. |
+| **Staff** | Anyone on the LSCnR staff team: moderators, developers, and admins. |
+| **Alt account** | A second account owned by someone who already has one. |
+
+</details>
 
 ---
 
 ## 1. RDM
 
-Attacking or killing another player without a valid reason, defined here as RDM, is not allowed. You may not attack or kill any player except when permitted by these rules.
+You may only attack or kill a player when one of the reasons in this section applies. Anything else is RDM.
 
-<details>
-<summary><strong>a. Valid kill reasons</strong></summary>
+### 1a. Always valid targets
 
-No additional justification is needed beyond the situation itself.
+These players can be engaged on sight. No initiation needed.
 
-#### Red-name bounty (5-star wanted level)
-
-Any player with a 5-star wanted level and a red name is kill-on-sight for all players. No initiation is required from either side. EMS are the one exception. See [Rule 2c](#2-cross-teaming).
-
-Any player who is actively fleeing from police, who does not have 5+ stars (A bounty) or has not fired at the police officers chasing him, can under no circumstance be shot at, or at their vehicle in means to disable it, this includes shooting tires, this is still RDM.
-
-#### Most Wanted
-
-The Most Wanted player is the single player currently holding the highest active bounty on the server. Reaching this status automatically elevates a player to a **6-star wanted level**, with their name and blip turning **dark red**. Only one player holds this status at a time, and they are KOS for all players except EMS. No initiation is required.
+| Target | How to spot them | Who can engage |
+| --- | --- | --- |
+| **Red name** (5 stars) | Red name | Everyone except EMS |
+| **Most Wanted** (6 stars) | Dark red name and blip. Only one player has this at a time: whoever holds the highest bounty. | Everyone except EMS |
+| **Hit target**, under 450,000 | Hit amount shown behind their name and on the scoreboard. No map blip, so you have to spot them yourself. | Everyone not working as a cop, EMS, or tow driver |
+| **Hit target**, 450,000 or more | Same as above, plus a bright blue name and blip the whole server can track | Everyone not working as a cop, EMS, or tow driver |
+| **Anyone in a redzone or active airdrop zone** | Marked on the map | Anyone else inside the zone. If they leave, you can't chase them out to kill them unless you have another reason. |
+| **Anyone inside an active robbery** | Store, bank, jewelry heist, or any other robbery in progress | Everyone, whether or not police show up. People nearby but outside the location are not targets unless they walk in. |
 
 <Callout type="info">
-If you are the Most Wanted player, you have the same self-defense rights as any other player, plus the right to pre-fire any player visibly approaching you with clear hostile intent. A player who happens to be nearby without showing hostile intent is **not** a valid target.
+**Most Wanted or have a hit on you?** You have normal self-defense rights, and you may also shoot first at anyone visibly coming at you with clear hostile intent. Someone who is just nearby is not a valid target.
+
+**Don't want a fight?** Keep your distance from dark red names and blips.
 </Callout>
-
-Players who don't want to be engaged should keep their distance from anyone marked with a dark red name and blip.
-
-#### Active hit contract
-
-If a hit contract has been placed on a player, that player is KOS for all players not currently working as a cop, paramedic, or tow driver, regardless of the hit amount.
-
-Hit visibility is tiered:
-
-| Hit amount | Visibility |
-| --- | --- |
-| **Under 450,000** | The hit amount is shown on the target's screen and displayed behind their name in the world and on the scoreboard. There is no map blip, so players can only identify the target on sight. |
-| **450,000 and above** | Everything above applies, and additionally the target's name and blip turn **bright blue**, making them trackable on the map by the entire server. |
 
 <Callout type="warning">
-You must have a valid reason such as initiation or revenge to place a hit on someone. Placing a hit without a valid reason is treated as RDM, regardless of who carries it out.
+**Placing a hit needs a valid reason**, such as initiation or revenge. A hit placed without one counts as RDM, no matter who carries it out.
 </Callout>
 
-If you have an active hit on you at any tier, you have the same self-defense rights as any other player, plus the right to pre-fire any player visibly approaching you with clear hostile intent. A player who happens to be nearby without showing hostile intent is not a valid target.
+### 1b. Initiation
 
-#### Initiation
-
-A player initiates on you when they do any of the following:
+A player initiates on you when they:
 
 - Aim or shoot a weapon at you
-- Intentionally ram your vehicle
-- Verbally threaten to kill you
-- Verbally insult you or your crew, in VC or in chat (have a clip of this ready to avoid false bans)
-- Move within assault rifle range of you with clear hostile intent. This does **not** apply if *you* move into *their* AR range
+- Ram your vehicle on purpose
+- Threaten to kill you
+- Insult you or your crew in voice or text chat (clip it so you're covered if it gets reported)
+- Come within assault rifle range of you with clear hostile intent. This does not count if **you** moved into **their** range.
 - Work against you
 - Keep following you around without a valid reason
+- Start towing your vehicle (tow drivers)
 
-Two situational cases also count as initiation:
+Once someone initiates, you may fight back. If they are clearly with other players, for example in the same car or grouped up, you may engage those players too.
 
-- **Most Wanted vehicle:** if you are in the Most Wanted player's vehicle, you may be shot at regardless of your own wanted level. Cops and EMS may not engage you on this basis unless your wanted level is 5 or higher, or you are shooting at them.
-- **Drug zones only:** if a player tells you to leave a drug zone and you do not leave, your refusal counts as initiation and that player may engage you. This applies at drug zones only, nowhere else.
+**Two special cases:**
 
-Once a player initiates on you, you may retaliate. If the initiator is presumably together with other players, for example in the same vehicle or clearly grouped, you may engage those players as well.
+- **Riding with the Most Wanted.** Anyone in the Most Wanted player's vehicle can be shot at, whatever their own wanted level. Cops and EMS still can't engage you for this alone unless you have 5+ stars or are shooting at them.
+- **Drug zones.** If someone tells you to leave a drug zone and you stay, that counts as initiation and they may engage you. This only applies at drug zones.
 
-**Initiation expires when:**
+**Initiation ends when** the initiator dies, you kill them, or you both clearly agree the fight is over. After that you need a new reason to engage them.
 
-- The initiator dies
-- You kill the initiator
-- Both parties clearly agree the engagement has ended
+### 1c. Revenge
 
-After initiation expires you need a fresh valid reason to engage that player again.
+If a player attacks you, kills you, arrests you, or takes your property, you may kill them **once** in the same game session. Failed attempts count too.
 
-#### Redzones and the airdrop zone
+- If they attack you again, you get revenge again.
+- If you kill each other at the same moment, you both still have revenge.
+- A tow driver starting to tow your vehicle counts as taking your property.
 
-If you are inside a marked redzone or the active airdrop zone, you may engage any player occupying it. If a target leaves the redzone, you may not chase them out of it with the intent to kill unless you have a separate valid reason to do so.
+### 1d. Attacking EMS
 
-#### Active robbery scenes
+EMS are neutral. As a civilian or criminal, you may only attack a paramedic who is:
 
-During any robbery in progress, whether a store, bank, jewelry heist, or any other robbery job, all players physically inside the robbery location are valid targets. This applies whether or not police are online or responding. Criminals defending the robbery, and any players who enter the building or location, do so on their own terms. Bystanders in the surrounding area who are not inside the active location are not automatically valid targets, but if they enter the scene, they accept the risk.
+- Reviving or healing your enemy
+- Staying close enough to your enemies to revive or heal them
+- Moving within assault rifle range while enemies nearby could be revived
 
-</details>
+You may intimidate EMS into not reviving your enemies. You may not take EMS hostage to make them work for you, kill them just because they revived your friend, or attack them at random.
 
-<details>
-<summary><strong>b. Revenge</strong></summary>
+### 1e. Fighting police
 
-Being attacked, killed, arrested, or having your property taken or stolen gives you the right to kill the responsible player once within the same game session. This includes failed attempts. If you are attacked again, your right to revenge is reinstated.
+When you can fight cops is covered on the [Criminal Rules](/criminals) page, and what cops may do is on the [Police Rules](/police) page. The key point: **with 0 stars you may only attack a cop if you have revenge on them, or they are trying to arrest or kill a member of your crew.**
 
-This applies to tow drivers as well. Beginning to tow your vehicle counts as initiation (see [Rule 2d](#2-cross-teaming)), which gives you the right to retaliate and satisfies the property-taken condition for revenge.
+### 1f. What counts as RDM
 
-When both players kill each other simultaneously in a trade, revenge is not considered satisfied and both players may seek it.
-
-</details>
-
-<details>
-<summary><strong>c. Cops and criminals</strong></summary>
-
-When you are a wanted suspect, you may kill police officers if they are:
-
-- Chasing or attempting to pull you or your friends over
-- Shooting at you or your friends
-- Arresting one of your friends
-- Camping a robbery location for a sustained period
-- Moving toward your position and getting within assault rifle range, except when you are near a police spawn location
-- Close enough that their police blip becomes visible to you while you are wanted, which counts as initiation by the officer
-
-Once any of these conditions are met, initiation has been established. You may continue pursuing and engaging that officer even if they attempt to disengage or flee. Fleeing does not cancel initiation.
-
-### Police POI; Drug-Location Camping
-
-Police may respond to points of interest, drug locations, cocaine labs, robbery-related locations, and other criminal activity when there is a legitimate police reason to do so.
-
-However, police may **not camp or wait at these locations for extended periods of time** in order to repeatedly catch or intercept players using the location.
-
-Police may remain at a location when they are actively dealing with a specific situation, such as:
-
-- Arresting or detaining a wanted player
-- Cuffing or fining a player who is currently wanted
-- Responding to an active crime or robbery
-- Pursuing a suspect who has fled to the location
-- Completing an immediate police action that reasonably requires them to remain there
-
-Once the immediate police action is complete, officers are expected to **leave the area and continue normal patrols**.
-
-Police may not:
-
-- Park or wait at a drug spot specifically to catch players arriving or leaving
-- Permanently station themselves at a cocaine lab or other criminal POI
-- Repeatedly return to the same POI solely because they know criminals use it
-- Remain at a location after their active police business there has concluded
-- Use a POI as a predictable ambush or checkpoint for players engaging with its gameplay mechanics
-
-The purpose of this rule is not to prevent police from responding to criminal activity. Police are allowed to enforce the law at these locations. The restriction is on **prolonged camping and passive waiting for players to appear**.
-
-If there is no longer an active situation requiring police presence, officers should leave the area and allow the location to function normally.
-
-Staff will consider the circumstances when determining whether police presence has become excessive. A short delay while finishing an arrest or responding to an active situation is **not** considered camping.
-
-**This is related to drug areas and black markets only.**
-
-See [Rule 20 (Cop Hunting)](#20-cop-hunting) for how these rules apply to unwanted players engaging cops.
-
-</details>
-
-<details>
-<summary><strong>d. Civilians and EMS</strong></summary>
-
-When playing as a civilian or criminal, you may attack or kill a paramedic if they are:
-
-- Reviving an enemy or opponent
-- Healing an enemy or opponent
-- Remaining close enough to enemies that they are able to revive or heal them
-- Moving within assault rifle range while nearby enemies could be revived
-
-Additional rules:
-
-- You may intimidate EMS to stop reviving enemies.
-- You may **not** take EMS hostage to force them to work for you.
-- You may **not** kill EMS simply because they revived your friend.
-- Randomly attacking EMS is RDM.
-
-</details>
-
-<details>
-<summary><strong>e. What is RDM</strong></summary>
-
-- Shooting a player with no bounty, no initiation, no redzone, and no active robbery scene
-- Killing someone because they "looked at you" or drove near you without any of the triggers above
-- Killing someone after the valid reason has expired, for example after the fight ended, after they left the redzone, or after the robbery concluded
-
-</details>
+- Shooting a player who has no bounty or hit, hasn't initiated, and isn't in a redzone, airdrop zone, or active robbery
+- Killing someone because they looked at you or drove near you
+- Killing someone after your reason ran out: the fight ended, they left the redzone, or the robbery is over
+- Shooting a player or their vehicle (tires included) just because police are chasing them
+- Placing a hit without a valid reason
 
 ---
 
-## 2. Cross-Teaming
+## 2. Teaming
 
-Working with or assisting the opposing side to gain an advantage is not allowed. The sides on LSCnR are **criminals, cops, paramedics, and tow drivers**. Each section below specifies what teaming means for that role.
+Don't work with or help the other side. The sides are **criminals, cops, EMS, and tow drivers**. Cop teaming rules are on the [Police Rules](/police#1-no-teaming-with-suspects) page, and EMS rules are in [Rule 3](#3-ems).
 
-<details>
-<summary><strong>a. Civilian / Criminal</strong></summary>
+As a civilian or criminal, you may not:
 
-- May not team up with or assist cops or paramedics
-- May not help them in a fight unless you have your own independent valid reason to engage their target
-- May not drive them away from their opponents
-- May not be in a vehicle with a cop while they are performing police duties or while you are committing crimes
-- May not team with EMS
-- May not help EMS in fights unless another rule independently allows it
-- May not help EMS escape from enemies by driving them away
+- Team up with or help cops or EMS
+- Join their fights, unless you have your own valid reason to engage their target
+- Drive them away from their enemies
+- Ride with a cop while they are doing police work, or while you are committing crimes
 
-</details>
+**Tow drivers** are neutral civilians. Normal civilian rules apply to them, with no extra teaming restrictions. They can't be attacked unless they initiate or start towing your vehicle.
 
-<details>
-<summary><strong>b. Cop</strong></summary>
+---
 
-- May not team up with or assist suspects, except through the scripted bribe feature
-- May not drive a wanted suspect anywhere unless they are in your custody being transported to a police station. No detours, no favors
-- May not help a suspect in a fight unless you have your own independent valid reason to engage their target
-- Has a duty to protect life, and may not witness violent criminal acts and do nothing
-- May not watch suspects attack other cops or paramedics and do nothing
-- If transporting a passenger who is not a cop, paramedic, or suspect in custody, may not engage in police activity until they leave the vehicle
-- If your passenger commits a crime, you are expected to stop the vehicle and detain them
-- Must not prevent another cop from completing an arrest or attempt to search their cuffed suspect without permission
+## 3. EMS
 
-</details>
+Paramedics are neutral. Your job is medical aid, not fighting.
 
-<details>
-<summary><strong>c. Paramedic</strong></summary>
+### 3a. Staying neutral
 
-Paramedics are neutral emergency responders whose primary duty is providing medical aid.
+- Only help suspects through the scripted revive and heal mechanics
+- Don't become a private medic for any gang or player
+- Don't help suspects in fights, unless another rule allows it
+- Don't drive suspects away from enemies or police
+- If you are transporting a suspect and police or enemies arrive, stop and let it play out
 
-#### Cross-teaming
-
-- May not team up with or assist suspects except through the scripted revive and heal mechanics
-- May not become a private medic for any gang or player
-- May not help suspects during fights unless another rule independently permits it
-- May not drive suspects away from enemies or police
-- If transporting a suspect and police or enemies arrive, must stop and allow the situation to play out
-
-#### Use of force
+### 3b. Use of force
 
 <Callout type="warning">
-EMS may only use lethal force when:
-- Acting in self-defense
-- Defending another paramedic
-- Stopping criminals posing an immediate threat while reviving or healing
+EMS may only use lethal force to:
 
-EMS has a duty to retreat whenever reasonably possible, and must immediately stop shooting once the threat ends.
+- Defend yourself
+- Defend another paramedic
+- Stop criminals who are an immediate threat while you revive or heal
+
+Retreat whenever you reasonably can, and stop shooting as soon as the threat is over.
 </Callout>
 
-#### Other restrictions
+Red name and Most Wanted players are **not** targets for EMS. You may not kill a player just because of their wanted level.
 
-| Restriction | Detail |
-| --- | --- |
-| **Carjacking** | EMS may not carjack innocent civilians, police officers, or other paramedics. |
-| **Property damage** | EMS may not intentionally damage unattended player vehicles. |
-| **Most Wanted** | Most Wanted (6-star) and red-name (5-star) players may be killed by everyone *except* EMS. EMS may not execute players solely because they are Most Wanted or red-name. |
+### 3c. Other restrictions
 
-</details>
-
-<details>
-<summary><strong>d. Tow driver</strong></summary>
-
-Tow drivers are neutral civilians. Standard civilian rules apply, and no additional teaming restrictions apply to tow drivers beyond those that apply to all civilians.
-
-Beginning to tow another player's vehicle counts as initiation against that vehicle's owner. The owner may retaliate under the normal initiation rules.
-
-</details>
+- Don't carjack innocent civilians, cops, or other paramedics
+- Don't damage unattended player vehicles on purpose
 
 ---
 
-## 3. Cheating
+## 4. Cheating and mods
 
 <Callout type="error">
-Using any modification, external program, or third-party tool that gives you an unfair advantage is not allowed. **Don't cheat or mod. You will be banned and your progress may be reset.**
+**No cheats or advantage mods.** You will be banned and your progress may be reset.
 </Callout>
 
-### Not allowed
+The simple test: if it isn't meant to be used and gives you more than a visual benefit over other players, it's not allowed, unless it's on the allowed list below.
 
-| Category | Examples |
+### 4a. Not allowed
+
+| Type | Examples |
 | --- | --- |
-| **Gameplay-altering tools** | Mod menus, wallhacks, noclip of any sort, health lock, damage modifiers, recoil scripts, rapid fire tools, triggerbots, aim assistance, cheat menus, softaim |
-| **Visual/world mods** | Ragdoll physics changes, object removal, foliage or prop removal such as leaves, bushes, water, electrical cabinets and phone booths, collision removal |
-| **Network abuse** | VPN-induced lag, lag switching, similar network manipulation |
-| **Player conduct** | Knowingly playing with a cheater without attempting to leave or reporting them |
-| **Weapon mods** | RPF mods that change weapon behavior in any way |
-| **Texture mods** | Anything that makes camouflage, ghillie suits, or hidden players easier to spot |
-| **HUD/minimap mods** | Extended radar range, player blips beyond normal detection radius |
-| **Vehicle/physics exploits** | Teleport hacks, infinite handbrake or traction glitches used to cheese chases |
-| **General rule** | If it's not meant to be used and gives you a benefit over other players beyond a purely visual one, it's not allowed unless explicitly listed below |
+| **Cheat tools** | Mod menus, wallhacks, noclip, health lock, damage modifiers, recoil scripts, rapid fire, triggerbots, softaim, any aim assistance |
+| **World and visual mods** | Ragdoll changes, removing objects, foliage, props, water, electrical cabinets or phone booths, removing collision |
+| **Texture mods** | Anything that makes camo, ghillie suits, or hiding players easier to see |
+| **HUD and minimap mods** | Bigger radar range, player blips beyond the normal range |
+| **Weapon mods** | RPF mods that change how weapons behave in any way |
+| **Vehicle and physics cheats** | Teleports, infinite handbrake or traction glitches used to cheese chases |
+| **Network abuse** | Lag switching, VPN lag, or any other network manipulation |
+| **Outfits** | Invisible or texture-abused clothing, or anything that hides your hitbox or body parts |
+| **Playing with cheaters** | Knowingly playing alongside a cheater without leaving or reporting them |
 
-### Allowed
+### 4b. Allowed
 
-| Allowed | Details |
+| Mod | Condition |
 | --- | --- |
-| **No-advantage mods** | Any modification that gives no advantage over other players |
-| **Static crosshair overlay** | A simple static crosshair that does not read game memory, automate inputs, or provide any advantage beyond a visual overlay. If it does more, treat it as **not allowed** unless staff confirm otherwise |
-| **Sound/visual mods** | Sound packs, graphic mods, Reshade, and FOV changes |
-| **Simple macros** | Macros that send text, commands, or hotkeys only |
-| **Graphics enhancement packs** | Fine as long as they don't remove objects, water, and similar |
-| **Skydome** | Custom skydomes are completely fine and allowed |
-| **Tracers** | Custom tracers are allowed |
-| **Weather mods** | Fine as long as they don't provide an unfair advantage |
-| **No shadows** | Allowed, since it improves FPS only with no real advantage |
+| **Graphics packs, Reshade, FOV changes** | As long as nothing gets removed (objects, water, and so on) |
+| **Sound packs** | Always fine |
+| **Skydomes and tracers** | Always fine |
+| **Weather mods** | As long as they give no unfair advantage |
+| **No shadows** | Allowed. It only helps FPS. |
+| **Static crosshair overlay** | Only a plain overlay. If it reads game memory, automates input, or does anything more, it's not allowed unless staff confirm it is. |
+| **Simple macros** | Only for sending text, commands, or hotkeys |
+| **Anything else with no advantage** | Allowed |
 
-Staff may determine whether a specific modification is allowed on a case-by-case basis. If staff deem a mod not allowed that isn't explicitly listed above, you may still be banned for it.
+Staff decide on anything not listed. If staff rule a mod not allowed, you can be banned for it even if it isn't listed here.
 
 ---
 
-## 4. Exploiting
+## 5. Exploits and bugs
 
 <Callout type="error">
-Exploiting any bug, glitch, script error, or unintended mechanic of LSCnR or GTA V to gain an advantage is not allowed. **Don't exploit. You will be banned and your progress may be reset.**
+**Don't abuse bugs, glitches, script errors, or unintended mechanics** of LSCnR or GTA V. You will be banned and your progress may be reset.
 </Callout>
 
-Some examples of prohibited exploits include:
+### 5a. Examples
 
-- Using emotes mid-combat to avoid a negative outcome or clip through geometry
-- Killing players who are on the revive screen, still loading in, or otherwise unable to control their character
-- Intentionally forcing a wanted level onto another player unfairly
-- Ghost peeking or other GTA V physics exploits used to gain a combat advantage
-- Spelling banned words differently to bypass the chat filter
-- Abusing money, XP, or item duplication loops
+- Killing players on the revive screen, still loading in, or otherwise unable to control their character
+- Forcing a wanted level onto another player unfairly
+- Misspelling banned words to get past the chat filter
+- Money, XP, or item duplication
+- Emoting mid-fight to dodge damage or clip through things (see [5b](#5b-emotes))
+- Ghost peeking (see [5c](#5c-ghost-peeking))
 
-This list is not exhaustive. Staff may ban for exploiting on a case-by-case basis.
+This list is not complete. Staff decide case by case.
+
+### 5b. Emotes
+
+No emotes during a fight or active chase. No exceptions. No emotes during events either, unless staff allow it for that event.
+
+### 5c. Ghost peeking
+
+Don't use walls or cover so your bullets pass through solid surfaces the engine shouldn't let them through.
 
 <Callout type="info">
-If you find an exploit, you are **required to report it in a private support ticket.** Sharing it with others or encouraging its abuse is a bannable offense.
+**Vehicles are different.** Some cars let a player shoot out of a window that bullets can't come in through. That's a known GTA V quirk, not ghost peeking, and reports about it will be denied. Flank, reposition, shoot the tires, or force them out of the car.
 </Callout>
 
----
+### 5d. Reporting bugs
 
-## 5. Combat Logging
+Found a bug? Get proof and report it in a **private support ticket**. Reporting a bug will never get you punished. Hiding one will.
 
-Disconnecting from the server to avoid being killed, arrested, or otherwise penalized is not allowed.
+These all count as hiding a bug:
 
-You are considered in combat if you were involved in a fight or active police chase within the last **3 minutes**. The minimap is not the sole indicator. If you were being chased and have not clearly escaped or resolved the situation, assume you are still in combat.
-
-Examples of combat logging include disconnecting mid-fight or mid-chase.
-
-### Exception
-
-Combat logging is permitted if an EMS player is unlawfully attempting to kill you in violation of these rules.
-
-### Accidental disconnects
-
-If you disconnect accidentally while in combat, reconnect within **5 minutes** and return to the situation when reasonable. Failing to reconnect, or reconnecting and not returning, may be treated as combat logging.
-
----
-
-## 6. Self-Killing
-
-**Self-killing is allowed.**
-
-Players are permitted to deliberately kill their own character at any time, including during an active chase, firefight, arrest attempt, or other active law-enforcement engagement.
-
-Self-killing is not considered combat logging and does not violate the rules simply because it is being used to end the character's life or remove the character from an active situation.
-
-This includes, but is not limited to:
-
-- Intentionally causing an explosion to kill yourself
-- Intentionally destroying your vehicle while standing next to it
-- Deliberately driving into hazards
-- Deliberately drowning yourself
-- Deliberately using environmental hazards
-- Using drugs or other game mechanics that can result in your character's death
-- Any other deliberate in-game action intended to kill your own character
-
-### Drug overdoses
-
-**Drug overdoses are always allowed.**
-
-Players may use drugs at their own discretion, even if doing so results in an overdose or death. An overdose is permitted regardless of whether the player is currently being chased, pursued, arrested, or otherwise engaged by police.
-
-### Other death mechanics
-
-**Other legitimate in-game mechanics that can intentionally kill your character are also allowed.**
-
-If the game or a server mechanic provides a legitimate way for a player to cause their own character to die, using that mechanic is permitted. This includes environmental hazards, scripted mechanics, items, drugs, vehicles, explosions, drowning, and similar gameplay mechanics.
-
-### Important distinction
-
-Self-killing being allowed does **not** make every form of intentionally dying to another player permissible.
-
-The separate **Kill Feeding** rule still applies. You may not intentionally allow another player to kill you to manipulate bounties, pad stats, or avoid a consequence.
-
-Self-killing itself, however, is fully permitted and may be used even when you are actively involved in a chase or police engagement.
-
----
-
-## 7. Crew Rules
-
-Crews are treated as a group for the purposes of accountability, initiation, and crew conflicts. Being part of a crew does not exempt a player from the normal rules, and crew membership does not grant additional rights beyond those specifically provided here.
-
-### Crew accountability
-
-Crew members are responsible for maintaining the behavior and conduct of their crew.
-
-Management may hold a crew accountable for the repeated or persistent bad behavior of its members. If a crew member consistently demonstrates bad behavior, management may issue fines or other penalties to the crew as a whole.
-
-This is intended for persistent patterns of behavior and does not mean a crew is automatically punished for every individual mistake made by one member.
-
-### Crew wars
-
-**Crew wars must always be arranged and approved by staff.**
-
-A crew war may only take place when it has been coordinated with staff and received **management approval**. Crews may not independently declare, organize, or conduct an unofficial crew war and treat it as an approved conflict.
-
-Staff and management may define or impose additional conditions for a crew war, including its participants, duration, locations, or other rules.
-
-### Crew initiation and retaliation
-
-Crew initiation works the same way as normal player initiation.
-
-If a crew member has valid initiation on another player, **all members of that crew may retaliate against the initiated player** under the normal initiation rules.
-
-However, the normal revenge limitation still applies. Crew members do not receive unlimited revenge rights simply because another crew member was involved.
-
-<Callout type="warning">
-**The 1x revenge rule remains in effect. Respect the revenge symbol.** Once the available revenge has been used, another crew member may not continue killing the same player under the same revenge reason unless a new valid reason or initiation has been established.
-</Callout>
-
-### Crew members playing as cops
-
-If you are playing as a police officer, you may **not favor, assist, protect, or otherwise give preferential treatment to members of your own crew under any circumstances.**
-
-Crew membership must be completely disregarded while performing police duties.
-
-If a crew member is **red-name / 5-star, Most Wanted, or otherwise a valid police target**, you must treat them exactly as you would any other player in the same situation.
-
-This is intentional. When playing as a cop, you appear as **not being part of your crew**. You must respect this separation and perform your police duties impartially.
-
-Helping your crew members evade arrest, withholding enforcement because they are in your crew, providing them with information, or otherwise using your police role to benefit your crew is not allowed.
-
----
-
-## 8. Ban Evasion
-
-If you are banned from the server, you are expected to serve the full duration of your ban. Bypassing a ban in any way is not allowed. If you have multiple accounts, do not use any of them while one is banned. **Your ban duration will be doubled if you do.**
-
-Account selling, trading, or sharing in a way that circumvents bans or harms server security is not allowed. You are responsible for everything that happens on your account.
-
----
-
-## 9. Lying to Staff
-
-You may not knowingly lie to a staff member in the following contexts:
-
-- When reporting a player for breaking a rule
-- When appealing a ban or any other infraction
-- When claiming a prize, refund, or any kind of compensation
-
-This applies anywhere a staff member is involved in the conversation, not only in tickets. If you are proven to have knowingly lied to staff in any of these contexts, you will be banned.
-
----
-
-## 10. Impersonating Staff
+- Quietly farming it, for example a money or item duplication bug
+- Sharing it with friends so your group can use it before staff find out
+- Encouraging others to abuse it
+- Continuing to use a known exploit instead of reporting it
 
 <Callout type="error">
-Impersonating a staff member is not allowed under any circumstance and will result in an immediate ban.
+**Hiding a bug means a ban and a full account reset.** Anything you gained while hiding it will be wiped.
 </Callout>
 
-This includes:
+---
 
-- Claiming to be part of the staff team, or to have been part of it in the past
-- Claiming to have the power to ban or penalize another player
-- Threatening to ban or penalize another player in the first person
-- Wearing staff clothing, driving staff vehicles, or otherwise presenting yourself as a staff member
-- Using staff permissions when not currently authorized to do so
+## 6. Combat logging and self-killing
+
+### 6a. Combat logging
+
+Don't disconnect to avoid being killed, arrested, or punished.
+
+You count as **in combat** if you were in a fight or police chase in the last **3 minutes**. Don't rely on the minimap. If you were being chased and haven't clearly escaped, assume you're still in combat.
+
+- **Accidental disconnect?** Reconnect within **5 minutes** and go back to the situation where reasonable. Not coming back, or coming back and avoiding it, can count as combat logging.
+- **Exception:** you may log out if an EMS player is breaking the rules by trying to kill you.
+
+### 6b. Self-killing
+
+**Killing your own character is allowed**, at any time, including during a chase, firefight, or arrest. It is not combat logging.
+
+This includes explosions, blowing up your own vehicle while standing next to it, driving into hazards, drowning, drug overdoses, and any other legit game or server mechanic that can kill you.
+
+### 6c. Kill feeding
+
+Letting another player kill you on purpose to manipulate bounties, pad stats, or avoid a consequence is not allowed. Obvious patterns will be punished, even if each case is claimed to be an accident.
+
+<Callout type="info">
+**Easy way to remember it:** killing yourself is fine. Letting someone else kill you on purpose is not.
+</Callout>
 
 ---
 
-## 11. Stream Sniping
+## 7. Crews
 
-Using another player's livestream to locate, follow, or otherwise gain an unfair in-game advantage is not allowed.
+Crews are treated as a group for initiation, accountability, and crew wars. Being in a crew doesn't exempt you from any rule or give you extra rights beyond what's listed here.
 
-### Streaming
+### 7a. Shared initiation
 
-Streaming is allowed and encouraged, but it is at your own risk. We recommend using a stream delay so viewers cannot use your stream to track your in-game position in real time.
-
----
-
-## 12. Emotes
-
-Using emotes during a fight or an active chase is not allowed. No exceptions.
-
-Using emotes during events is not allowed unless staff explicitly permit it for that specific event.
-
----
-
-## 13. Ghost Peeking
-
-Abusing wall or cover geometry so that your bullets clip through solid surfaces in ways the engine was not intended to allow is not allowed.
-
-### What is *not* ghost peeking
-
-Some vehicles have asymmetric collision. For example, a car where a player can shoot out the back window but bullets cannot pass through that same window going in. This is a known quirk of GTA V vehicle collision and is **not** a punishable offense. Reports of this nature will be denied. Adjust your gameplay by flanking, repositioning, shooting the tires, or forcing the player out of the vehicle.
-
-Ghost peeking applies specifically to abusing wall and cover geometry on foot, not to vehicle collision quirks.
-
----
-
-## 14. Safe Zones
-
-Marked safe zones such as hospitals, spawns, and other designated spots are no-combat areas. They are shown in-game as large green circles on the map with an on-screen indicator confirming when you are inside one. If you do not see the indicator, you are not protected.
-
-<details>
-<summary><strong>Entry delay</strong></summary>
+If one crew member has valid initiation on a player, **the whole crew** may retaliate against that player under the normal initiation rules.
 
 <Callout type="warning">
-Safe zone protection does not apply instantly. There is a **10 second delay** after entering a safe zone before protection activates. You cannot sprint into a safe zone mid-fight and expect immediate protection. Players engaging you may legally continue to do so during that window.
+**Revenge is still one kill. Respect the revenge symbol.** Once revenge has been used, other crew members can't keep killing that player for the same reason. They need a new valid reason or new initiation.
 </Callout>
 
-</details>
+### 7b. Crew wars
 
-<details>
-<summary><strong>Wanted players and hit targets</strong></summary>
+Every crew war must be arranged with staff and **approved by management**. Crews can't declare or run their own unofficial war. Staff and management may set extra conditions, such as who takes part, how long it lasts, where it happens, and other rules.
 
-Safe zones do not protect players with an active wanted level or an active hit contract. Cops may engage and arrest wanted players inside a safe zone. Any player with a hit on them remains a valid target inside a safe zone, consistent with how bounty and wanted players are treated. Other players may not RDM an unrelated player inside a safe zone, but engaging a wanted or hit player is not RDM.
+### 7c. Crew accountability
 
-</details>
+Crew members are responsible for the conduct of their crew. If a member keeps behaving badly, management may fine or penalize the whole crew. This is for ongoing patterns, not every single mistake by one member.
 
-<details>
-<summary><strong>Not allowed inside safe zones</strong></summary>
+### 7d. Crew members playing as cops
 
-- Killing or attacking players
-- Baiting fights or provoking players to drag them out
-- Camping to farm easy kills
-
-Using a safe zone to escape a fight you started or were losing is abuse of mechanics and may be treated as combat logging or exploiting.
-
-</details>
+On duty, your crew means nothing. See [Police Rules](/police#5-your-crew).
 
 ---
 
-## 15. Clothing
+## 8. Safe zones
 
-Outfits that are invisible, texture-abused, or otherwise designed to hide your hitbox or body parts are not allowed.
+Safe zones such as hospitals and spawns are no-combat areas. They show on the map as large green circles, and you'll see an on-screen indicator when you're inside one. **No indicator means no protection.**
+
+| Rule | Detail |
+| --- | --- |
+| **10 second delay** | Protection starts 10 seconds after you enter. Running in mid-fight doesn't save you, and the other player can keep fighting you during that window. |
+| **Wanted and hit players aren't protected** | Cops can still engage and arrest wanted players inside, and hit targets can still be engaged inside. |
+| **No fighting** | Don't attack or kill players inside. |
+| **No baiting** | Don't provoke players to drag them out into a fight. |
+| **No camping** | Don't camp safe zones to farm easy kills. |
+
+Using a safe zone to escape a fight you started or were losing may be treated as combat logging or exploiting.
 
 ---
 
-## 16. Kill Feeding
+## 9. Staff, accounts, and reports
 
-Intentionally allowing another player to kill you to manipulate bounties, pad stats, or avoid a consequence is not allowed. Obvious patterns will be punished even if individual incidents are claimed to be accidental.
+### 9a. Ban evasion
+
+Serve your full ban. Don't bypass it in any way, and don't play on any other account while one is banned. **If you do, your ban is doubled.**
+
+Don't sell, trade, or share accounts to get around bans or in ways that hurt server security. You are responsible for everything done on your account.
+
+### 9b. Lying to staff
+
+Don't knowingly lie to staff when reporting a player, appealing a punishment, or claiming a prize, refund, or compensation. This applies anywhere staff are involved, not just in tickets. Proven lies mean a ban.
+
+### 9c. Impersonating staff
+
+<Callout type="error">
+**Pretending to be staff is an instant ban.** That includes:
+
+- Claiming you are or used to be staff
+- Claiming you can ban or punish players
+- Threatening to ban or punish someone yourself
+- Wearing staff clothing, driving staff vehicles, or otherwise posing as staff
+- Using staff permissions you're not currently authorized to use
+</Callout>
+
+### 9d. Begging
+
+| If you ask staff for | You get |
+| --- | --- |
+| A staff position | Blacklisted from ever becoming staff |
+| Money, items, VIP, unbans, or other favors | Mute or temporary suspension |
+
+Refund or compensation requests for a real bug or server issue are not begging. Use the normal ticket process.
+
+### 9e. Reports
+
+Include a clip or screenshots with enough context for staff to see what happened and when. Reports without evidence may not be actionable, and false or malicious reports can be punished.
+
+Don't abuse the report system. That means no:
+
+- Reporting someone to pressure staff after you lost a fight
+- Mass-reporting someone over a personal dispute
+- Refiling a complaint staff already answered
+- Flooding tickets with reports that have no evidence
+
+Reports about clearly valid kills under [Rule 1](#1-rdm) will be denied. Repeat offenders get blacklisted from reports and may be banned.
+
+### 9f. Staff decisions
+
+Staff decisions, punishments, and investigations are not public discussion topics. This covers bans, warnings, mutes, kicks, report outcomes, investigations, and appeals, whether they're about you or someone else.
+
+Don't:
+
+- Discuss another player's punishment in game, on Discord, or in other community channels
+- Argue in public about whether a punishment was deserved
+- Use public pressure to influence staff
+- Get others to take sides
+- Keep bringing up decisions that are already settled
+
+Also don't disrespect staff who are moderating respectfully, or spam them with bad-faith debates.
+
+**Disagree with a decision?** Use an appeal or ticket. **Think a staff member abused their power?** Open a **Staff Report** ticket on Discord with evidence and a clear timeline.
+
+<Callout type="warning">
+If you keep discussing a staff decision after being told to stop, you may be punished further.
+</Callout>
 
 ---
 
-## 17. Persistent Negative Behavior
+## 10. Community conduct
 
-Some players are not breaking a single specific rule but consistently make the server worse for everyone around them. That counts here.
+### 10a. Serious offenses
 
-Examples include, but are not limited to:
+<Callout type="error">
+Never allowed, under any circumstances:
+
+- Threatening real-life violence or sexual assault
+- Doxxing: sharing someone's name, address, phone number, or other identifying info
+- Threatening or carrying out DDoS attacks or account hacking
+- Wishing death, serious illness, injury, or violence on a player or their family
+
+Threats that could be real may be reported to the relevant authorities.
+</Callout>
+
+### 10b. General conduct
+
+| Rule | What it means |
+| --- | --- |
+| **No hate speech** | No slurs or discrimination based on race, ethnicity, national origin, gender, sexual orientation, religion, or disability. |
+| **No harassment** | Banter is fine. Targeted harassment, relentless insults, stalking someone across sessions, or baiting players into breaking rules is not. If you get baited into breaking a rule, the rule break is still on you. |
+| **No sexual harassment** | Not in text, voice, or radio. If you don't know someone's age, assume they're a minor. |
+| **No inappropriate content** | No gore, nudity, porn, or explicit sexual material. Avoid in-depth public talk about real-life violence, suicide, self-harm, child abuse, terrorism, or illegal hacking, and never talk about them positively. |
+| **No voice chat abuse** | No earrape, soundboard or meme spam, or voice changers used mainly to harass or grief. |
+| **No scamming** | If you agree to a trade, finish it or give back what you got. Staff can't guarantee you'll get scammed items back. |
+| **No real money trading** | Don't buy or sell in-game items or money for real money, crypto, or anything with real-world value. In-game currency for in-game items only. |
+| **No stream sniping** | Don't use someone's stream to find, follow, or get an edge on them. Streaming is welcome, but at your own risk. We recommend a stream delay. |
+| **No advertising** | Don't advertise other servers, communities, products, or services without permission. |
+| **English only** | In text and voice chat, so staff can moderate fairly. |
+
+### 10c. Persistent negative behavior
+
+Some players never break one big rule but keep making the server worse for everyone around them. That counts too.
 
 | Behavior | What it looks like |
 | --- | --- |
-| **Constant chat spam** | Flooding global or local chat, refusing to stop when asked |
-| **Constant harassment** | Repeatedly targeting the same player in low-level ways that add up over time |
-| **Constant drama** | Stirring conflict between players, staff, or communities every session |
-| **Draining behavior** | Being the player who is always the reason a tense ticket exists, even when no single moment crosses a hard rule line |
+| **Chat spam** | Flooding global or local chat and not stopping when asked |
+| **Ongoing harassment** | Picking on the same player in small ways that add up |
+| **Constant drama** | Stirring up conflict between players, staff, or communities every session |
+| **Draining behavior** | Always being the reason a tense ticket exists, even when no single moment crosses a line |
 
 <Callout type="warning">
-If your presence consistently makes the server worse for the people around you, staff may issue a permanent removal regardless of whether each individual incident crossed a hard rule line. This is about a pattern, not a bad day. Staff will consider history, ticket volume, and how other players react to your presence.
+If your presence keeps making the server worse, staff may remove you permanently, even if no single incident broke a hard rule. This is about a pattern, not one bad day. Staff look at your history, ticket volume, and how other players react to you.
 </Callout>
 
----
+### 10d. Minimum age
 
-## 18. Bug Reports
-
-If you find a bug, do not abuse it. Collect proof and report it in a private support ticket. Reporting a bug will never get you punished. Hiding one will.
-
-Intentionally concealing a bug because it benefits you is treated as exploit abuse. This includes quietly farming a money or item duplication bug, sharing a bug privately with friends so your group can use it before staff find out, and continuing to use a known exploit instead of reporting it.
-
-<Callout type="error">
-**Consequence: ban and full account reset.** Any progress, items, or currency gained while concealing a bug will be wiped.
-</Callout>
-
----
-
-## 19. Minimum Age
-
-You must be at least **18 years old** to play on LSCnR. If you are under 18, you may only remain on the server if staff have explicitly agreed that you have demonstrated clear maturity. That permission can be revoked at any time if your behavior does not hold up. Lying about your age or attempting to bypass this rule can be punished.
-
----
-
-## 20. Cop Hunting
-
-LSCnR does not have "cop hunting" as a separate mechanic. Engaging a police officer is governed entirely by the RDM rules in [Rule 1](#1-rdm), not by the fact that they are a cop.
-
-| Your wanted level | What you may do |
-| --- | --- |
-| **0 stars** | You may not attack, shoot at, or attempt to kill a police officer, including by ramming them with a vehicle. This is RDM. Being a cop, being nearby, or performing police duties is not on its own a valid kill reason. |
-| **1 star or higher** | An officer attempting to pull you over, chase you, or arrest you has initiated on you under [Rule 1c](#1-rdm). You may retaliate against that officer under the normal initiation rules. |
-
-Attacking cops with no wanted level is considered RDM.
-
----
-
-## 21. Code of Conduct
-
-<details>
-<summary><strong>a. Hate speech and discrimination</strong></summary>
-
-Hate speech, slurs, and discriminatory language are not allowed. This includes remarks targeting someone's race, ethnicity, national origin, gender, sexual orientation, religion, or disability.
-
-</details>
-
-<details>
-<summary><strong>b. Harassment and toxicity</strong></summary>
-
-Playful banter is fine. Targeted harassment, relentless insults, baiting players into breaking rules, or stalking someone across sessions to annoy them is not. If someone baits you into a rule break, you are still responsible for the rule break.
-
-</details>
-
-<details>
-<summary><strong>c. Threats and harmful conduct</strong></summary>
-
-<Callout type="error">
-The following are not allowed under any circumstances:
-- Threatening real-life violence or sexual assault
-- Doxxing, meaning sharing someone's name, address, phone number, or other identifying information
-- Threatening or performing DDoS attacks or account hacking
-- Wishing death, serious illness, injury, or violence on any player or their family
-
-Threats that have enough potential to be real may be reported to relevant authorities.
-</Callout>
-
-</details>
-
-<details>
-<summary><strong>d. Inappropriate content and subjects</strong></summary>
-
-Graphic content, gore, nudity, pornography, and explicit sexual material are not allowed. Avoid in-depth public discussions of real-life violence, suicide, self-harm, child abuse, terrorism, or illegal hacking. Do not talk positively about any of these subjects.
-
-</details>
-
-<details>
-<summary><strong>e. Sexual harassment</strong></summary>
-
-Sexually harassing other players over text, voice, or radio is not allowed. If you are unsure of another player's age, assume they are a minor.
-
-</details>
-
-<details>
-<summary><strong>f. Voice chat abuse</strong></summary>
-
-Earraping, blasting soundboards or memes to disrupt voice chat, and using voice changers primarily to harass or grief are not allowed.
-
-</details>
-
-<details>
-<summary><strong>g. Scamming</strong></summary>
-
-When you agree to an in-game trade you must complete it or return what you received. Scamming or deceiving another player in a trade is not allowed. The server is not responsible for scams and cannot guarantee recovery of lost items.
-
-</details>
-
-<details>
-<summary><strong>h. Selling in-game items for real currency</strong></summary>
-
-Trading, selling, or buying in-game items or currency for real-world money, cryptocurrency, or any service with real-world value is not allowed. You may only trade in-game currency for in-game items.
-
-</details>
-
-<details>
-<summary><strong>i. English only</strong></summary>
-
-English is the only permitted language in text and voice chat for the purposes of fair moderation and communication.
-
-</details>
-
-<details>
-<summary><strong>j. Advertising</strong></summary>
-
-Advertising other servers, communities, products, or services without permission is not allowed.
-
-</details>
-
-<details>
-<summary><strong>k. Staff conduct</strong></summary>
-
-Do not disrespect a staff member who is actively and respectfully moderating. Publicly arguing against a final staff decision, or spamming staff with bad-faith debates, is not allowed. If you believe a staff member abused their power, open a **Staff Report** ticket on Discord with evidence and a clear timeline. Do not start a public argument in chat.
-
-</details>
-
-<details>
-<summary><strong>l. Report spamming</strong></summary>
-
-The report system exists to address real rule breaks. Do not use it to pressure staff after losing a fight, mass-report someone over a personal dispute, refile the same complaint after staff have already responded, or flood tickets with reports that have no evidence. Reports opened for situations that are clearly valid kills under [Rule 1](#1-rdm) will be denied. Repeat offenders will be blacklisted from the report system and may be banned.
-
-</details>
-
-<details>
-<summary><strong>m. Player reports and evidence</strong></summary>
-
-When submitting a report, include a clip and/or screenshots with enough context for staff to see what happened and when. Reports without evidence may not be actionable. Malicious or false reports can be punished.
-
-</details>
-
-<details>
-<summary><strong>n. Staff decisions and punishments</strong></summary>
-
-Staff decisions, punishments, investigations, and internal actions are not public discussion topics.
-
-You may not publicly discuss, debate, campaign against, or attempt to rally support regarding a staff action taken against yourself or another player. This includes bans, warnings, mutes, kicks, report outcomes, staff investigations, and appeals.
-
-Examples include:
-
-- Discussing another player's ban in-game, Discord, or other public community channels
-- Arguing about whether a punishment was deserved
-- Attempting to influence staff decisions through public pressure
-- Encouraging others to take sides in a punishment or appeal
-- Repeatedly bringing up resolved staff actions after a decision has been made
-
-If you disagree with a punishment or staff decision, use the appropriate appeal, report, or ticket process. Public discussion is not the place to challenge or debate staff actions.
-
-<Callout type="warning">
-Continuing to discuss staff decisions after being told to stop may result in further punishment.
-</Callout>
-
-</details>
-
----
-
-## 22. Begging
-
-Begging staff for items, money, VIP, unbans, or any other personal favor is not allowed.
-
-| Behavior | Consequence |
-| --- | --- |
-| **Asking to become staff** | Blacklisted from ever becoming staff |
-| **Asking staff for money, VIP, unbans, or other personal favors** | Mute or temporary suspension |
-
-<Callout type="info">
-Legitimate requests, such as a refund or compensation ticket for a genuine bug or server issue, are not begging and should go through the normal ticket process.
-</Callout>
+You must be **18 or older** to play. Players under 18 may only stay if staff have explicitly agreed they've shown clear maturity, and that can be taken back at any time. Lying about your age or trying to get around this rule can be punished.
