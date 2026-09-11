@@ -1,12 +1,12 @@
 {
   "index": "Introduction",
-  "discord": "Discord Rules",
-  "ingame": "Ingame Rules",
-  "guides": "Player guides",
+  "ingame": "Server Rules",
+  "criminals": "Criminal Rules",
+  "police": "Police Rules"
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://lscnr.net/",
     "newWindow": true
   }
 }
