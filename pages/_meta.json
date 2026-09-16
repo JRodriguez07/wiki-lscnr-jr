@@ -1,9 +1,7 @@
 {
   "index": "Introduction",
   "getting-started": "Getting Started",
-  "ingame": "Server Rules",
-  "criminals": "Criminal Rules",
-  "police": "Police Rules",
+  "rules": "Rules",
   "contact": {
     "title": "Contact ↗",
     "type": "page",
