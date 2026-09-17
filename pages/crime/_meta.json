@@ -1,8 +1,11 @@
 {
+  "atm-hacking": "ATM Hacking",
   "bank-heists": "Bank Heists",
+  "bank-trucks": "Bank Trucks",
   "car-exports": "Car Exports",
   "drugs": "Drugs",
   "house-robberies": "House Robberies",
   "nightclub-robbery": "Nightclub Robbery",
-  "small-time-robbery": "Small-Time Robbery"
+  "small-time-robbery": "Small-Time Robbery",
+  "unicorn-heist": "Vanilla Unicorn"
 }
