@@ -1,12 +1,9 @@
 {
   "bank-heists": "Bank Heists",
   "car-exports": "Car Exports",
-  "convenience-store-robbery": "Convenience Store Robbery",
   "drugs": "Drugs",
-  "gun-store-robbery": "Gun Store Robbery",
   "house-robberies": "House Robberies",
   "nightclub-robbery": "Nightclub Robbery",
-  "parking-meters": "Parking Meters",
-  "store-safes": "Store Safes",
+  "small-time-robbery": "Small-Time Robbery",
   "vending-machines": "Vending Machines"
 }
