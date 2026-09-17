@@ -4,12 +4,12 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 const config: DocsThemeConfig = {
   logo: <span>Lscnr</span>,
   project: {
-    link: 'https://github.com/Lorenc95/wiki-lscnr',
+    link: 'https://github.com/IllInuz/wiki-lscnr',
   },
   chat: {
     link: 'https://discord.com',
   },
-  docsRepositoryBase: 'https://github.com/Lorenc95/wiki-lscnr/blob/main',
+  docsRepositoryBase: 'https://github.com/IllInuz/wiki-lscnr/blob/main',
   footer: {
     text: '© 2024 LSCNR - All rights reserved.',
   },
