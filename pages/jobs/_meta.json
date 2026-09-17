@@ -1,3 +1,9 @@
 {
+  "fishing": "Fishing",
+  "mining": "Mining",
+  "pizza-delivery": "Pizza Delivery",
+  "scuba-diving": "Scuba Diving",
+  "taco-stand": "Taco Stand",
+  "taxi": "Taxi",
   "trucking": "Trucking"
 }
