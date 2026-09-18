@@ -1,5 +1,11 @@
 {
-  "ems": "EMS",
+  "civilian": "Civilian",
+  "ems": "EMS (Unavailable)",
   "police": "Police",
+  "fib": "FIB",
+  "iaa": "IAA (Unavailable)",
+  "army": "Army (Unavailable)",
+  "fireman": "Fireman (Unavailable)",
   "tow-driver": "Tow Driver"
 }
+
